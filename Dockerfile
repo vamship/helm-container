@@ -25,8 +25,11 @@ RUN apk add --no-cache ca-certificates bash git \
     && chmod +x /usr/local/bin/kubectl \
     && wget -q https://storage.googleapis.com/kubernetes-helm/helm-${HELM_VERSION}-linux-amd64.tar.gz \
        -O - | tar -xzO linux-amd64/helm > /usr/local/bin/helm \
-    && chmod +x /usr/local/bin/helm
+    && chmod +x /usr/local/bin/helm \
+    && mkdir -p /root/.helm \
+    && helm init --client-only \
+    && helm repo update
 
-WORKDIR /config
+WORKDIR /root
 
 CMD bash
