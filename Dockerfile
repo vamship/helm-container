@@ -9,7 +9,7 @@ LABEL org.label-schema.name=$APP_NAME \
       org.label-schema.version=$APP_VERSION \
       org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.url="https://hub.docker.com/r/vamship/helm/" \
-      org.label-schema.vcs-url="https://github.com/vamship/helm" 
+      org.label-schema.vcs-url="https://github.com/vamship/helm-container"
 
 # Note: Latest version of kubectl may be found at:
 # https://aur.archlinux.org/packages/kubectl-bin/
