@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3.8
 
 ARG APP_NAME
 ARG BUILD_TIMESTAMP
@@ -19,7 +19,8 @@ ENV KUBE_LATEST_VERSION="v1.12.0"
 # https://github.com/kubernetes/helm/releases
 ENV HELM_VERSION="v2.11.0"
 
-RUN apk add --no-cache ca-certificates bash git \
+RUN apk update \
+    && apk add --no-cache ca-certificates bash \
     && wget -q https://storage.googleapis.com/kubernetes-release/release/${KUBE_LATEST_VERSION}/bin/linux/amd64/kubectl \
        -O /usr/local/bin/kubectl \
     && chmod +x /usr/local/bin/kubectl \
