@@ -7,7 +7,7 @@ ARG APP_VERSION
 # Metadata
 LABEL org.label-schema.name=$APP_NAME \
       org.label-schema.version=$APP_VERSION \
-      org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.build-date=$BUILD_TIMESTAMP \
       org.label-schema.url="https://hub.docker.com/r/vamship/helm/" \
       org.label-schema.vcs-url="https://github.com/vamship/helm-container"
 
