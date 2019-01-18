@@ -17,7 +17,7 @@ ENV KUBE_LATEST_VERSION="v1.12.0"
 
 # Note: Latest version of helm may be found at:
 # https://github.com/kubernetes/helm/releases
-ENV HELM_VERSION="v2.11.0"
+ENV HELM_VERSION="v2.12.2"
 
 RUN apk update \
     && apk add --no-cache ca-certificates bash \
