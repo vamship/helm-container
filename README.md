@@ -1,7 +1,7 @@
-# cqlsh-container
+# helm-container
 
-Project that can be used to build a simple container that provides a cassandra
-QL shell (cqlsh)
+Project that can be used to build a simple container that provides kubectl and
+helm.
 
 ## Building
 
