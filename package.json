@@ -1,6 +1,6 @@
 {
     "name": "@vamship/helm-container",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Container builder project for a container that includes helm and kubectl",
     "keywords": [
         "kubernetes",
